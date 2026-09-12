@@ -1,0 +1,15 @@
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.GeneratedMSBuildEditorConfig.editorconfig
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.AssemblyInfoInputs.cache
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.AssemblyInfo.cs
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.csproj.CoreCompileInputs.cache
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.sourcelink.json
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/bin/Debug/net10.0/CalculadoraRPN
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/bin/Debug/net10.0/CalculadoraRPN.deps.json
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/bin/Debug/net10.0/CalculadoraRPN.runtimeconfig.json
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/bin/Debug/net10.0/CalculadoraRPN.dll
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/bin/Debug/net10.0/CalculadoraRPN.pdb
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.dll
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/refint/CalculadoraRPN.dll
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.pdb
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/CalculadoraRPN.genruntimeconfig.cache
+/Users/phoneservicemid/Desktop/Calculadora_RPN/CalculadoraRPN/obj/Debug/net10.0/ref/CalculadoraRPN.dll

@@ -6,7 +6,7 @@ public class ExpressionValidator
     public static bool CheckParentheses(string expression)
     {
         // Pila para almacenar los paréntesis de apertura
-        Stack<char> stack = new Stack<char>();
+        ArrayStack<T> stack = new ArrayStack<T>();
 
         foreach (char ch in expression)
         {
