@@ -143,4 +143,67 @@ public class ExpressionValidator
         List<string> rpn = ConvertToRPN(expression);
         return string.Join(" ", rpn.ToArray());
     }
+
+    // (-C-) Evaluador RPN
+    public static double EvaluateRPN(List<string> rpn, Dictionary<string, double>? workspace = null)
+    {
+        ArrayStack<double> stack = new ArrayStack<double>();
+
+        foreach (string token in rpn)
+        {
+            if (double.TryParse(token, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out double num) ||
+                double.TryParse(token, out num))
+            {
+                stack.Push(num);
+            }
+            else if (workspace != null && workspace.TryGetValue(token, out double val))
+            {
+                stack.Push(val);
+            }
+            else if (token == "+" || token == "-" || token == "*" || token == "/" || token == "^")
+            {
+                if (stack.Empty)
+                {
+                    throw new InvalidOperationException("Expresión inválida: faltan operandos.");
+                }
+                double b = stack.Pop();
+
+                if (stack.Empty)
+                {
+                    throw new InvalidOperationException("Expresión inválida: faltan operandos.");
+                }
+                double a = stack.Pop();
+
+                double res = token switch
+                {
+                    "+" => a + b,
+                    "-" => a - b,
+                    "*" => a * b,
+                    "/" => b == 0 ? throw new DivideByZeroException("División entre cero.") : a / b,
+                    "^" => Math.Pow(a, b),
+                    _ => throw new InvalidOperationException($"Operador no soportado: {token}")
+                };
+
+                stack.Push(res);
+            }
+            else
+            {
+                throw new InvalidOperationException($"Elemento no reconocido o variable no definida: '{token}'.");
+            }
+        }
+
+        if (stack.Empty)
+        {
+            throw new InvalidOperationException("Expresión vacía.");
+        }
+
+        double result = stack.Pop();
+
+        if (!stack.Empty)
+        {
+            throw new InvalidOperationException("Expresión inválida: sobran operandos.");
+        }
+
+        return result;
+    }
 }
